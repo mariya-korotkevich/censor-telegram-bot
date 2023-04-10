@@ -1,10 +1,12 @@
-package impl;
+package ru.korotkevich.impl;
 
-import abstracts.MessageFilter;
-import abstracts.WordFilter;
+import org.springframework.stereotype.Component;
+import ru.korotkevich.abstracts.MessageFilter;
+import ru.korotkevich.abstracts.WordFilter;
 
 import java.util.List;
 
+@Component
 public class MessageFilterImpl implements MessageFilter {
 
     private final WordFilter wordFilter;

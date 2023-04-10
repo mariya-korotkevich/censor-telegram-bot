@@ -1,6 +1,7 @@
-package impl;
+package ru.korotkevich.impl;
 
-import abstracts.WordFilter;
+import org.springframework.stereotype.Component;
+import ru.korotkevich.abstracts.WordFilter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class WordFilterImpl implements WordFilter {
 
     List<String> badWords = new ArrayList<>();
